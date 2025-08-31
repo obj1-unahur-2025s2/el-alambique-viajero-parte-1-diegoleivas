@@ -10,11 +10,11 @@ object buenosAires {
 
    method recuerdoTipico() = mate.segunPresidente_(presidenteActual)
    method restriccion(vehiculo) = vehiculo.esRapido()
-   method esRapido() = true 
+  
   
       
     }
-object bagdag {
+object bagdad {
   var anio=1980
   method recuerdoTipico() = recuerdo.recuerdoSegun_(anio)
   method restriccion(vehiculo) =true
@@ -35,6 +35,7 @@ object islasMalvinas {
   var  recuerdoL = "bandera ARGENTINA"
 
   method recuerdoTipico()= recuerdoL
+  method restriccion(vehiculo) = true
 
   
 }

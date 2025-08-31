@@ -1,0 +1,25 @@
+import conductor.*
+import lugares.*
+import recuerdos.*
+import elAlambiqueViajero.*
+
+
+
+
+
+describe "varios Viajes de Luque" {
+     test "luque viaja  si puede a paris , buenos aires , cambia de auto , vuelve a paris y su destino final Bagdad (destinos alcanzados 3 y ultim recuerdo Bidon)" {
+            luque.viajarA_SiPuede(paris)
+            luque.viajarA_SiPuede(buenosAires)
+            luque.cambiarVehiculo(chatarraEspecial)
+            luque.viajarA_SiPuede(paris)
+            luque.viajarA_SiPuede(bagdad)
+            assert.equals( 3 , luque.lugares_Visitados() )
+            assert.that(luque.recuerdoDeUltimoLugar() == "bidón con petróleo crudo")
+            
+           
+
+
+
+}
+}

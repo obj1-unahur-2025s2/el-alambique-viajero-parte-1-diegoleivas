@@ -22,11 +22,11 @@ object chatarraEspecial {
 
 object antiguallaBlindada {
     var  combustibleSuficiente = true
-    var gunster = 3
+    var cantgunster = 3
     var sinRestriccion = true
      
     method tieneCombustibleSuficiente()= combustibleSuficiente
-    method esRapido() = gunster<=2
+    method esRapido() = cantgunster<=2
     method sinRestriccion() = sinRestriccion
   
 }
